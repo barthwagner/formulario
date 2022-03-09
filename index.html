@@ -5,56 +5,71 @@
     <title>Formulário</title>
   </head>
   <body>
-    <div>
-      <label for="categoria">Categorias: </label>
-      <select name="categoria" id="categoria">
-        <option value="administrador">Administrador</option>
-        <option value="gerente">Gerente</option>
-        <option value="funcionario" selected>Funcionário</option>
-      </select>
-    </div>
+    <form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" size="70" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" size="70" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" required>
+        </div>
+      <div>
+        <label for="categoria">Categorias: </label>
+        <select name="categoria" id="categoria">
+          <option value="administrador">Administrador</option>
+          <option value="gerente">Gerente</option>
+          <option value="funcionario" selected>Funcionário</option>
+        </select>
+      </div>
 
-    <div>
+      <div>
         <label>Selecione as cores de sua preferência: </label>
-        <br/>
-        <input type="checkbox" name="blue" id="blue">
+        <br />
+        <input type="checkbox" name="blue" id="blue" />
         <label for="blue">Azul</label>
-        <br/>
-        <input type="checkbox" name="green" id="green">
+        <br />
+        <input type="checkbox" name="green" id="green" />
         <label for="green">Verde</label>
-        <br/>
-        <input type="checkbox" name="red" id="red">
+        <br />
+        <input type="checkbox" name="red" id="red" />
         <label for="red">Vermelho</label>
-    </div>
+      </div>
 
-    <div>
+      <div>
         <label>Sexo: </label>
-        <br/>
-        <input type="radio" name="sexo" id="sexo_m" value="m">
+        <br />
+        <input type="radio" name="sexo" id="sexo_m" value="m" />
         <label for="sexo_m">Masculino</label>
-        <input type="radio" name="sexo" id="sexo_f" value="f">
+        <input type="radio" name="sexo" id="sexo_f" value="f" />
         <label for="sexo_f">Feminino</label>
-    </div>
+      </div>
 
-    <div>
+      <div>
         <label for="comentarios">Comentários:</label>
-        <br/>
-        <textarea 
-            name="comentarios" 
-            id="comentarios" 
-            cols="50" 
-            rows="4"
-            style="resize: none;"
+        <br />
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          cols="50"
+          rows="4"
+          style="resize: none"
         ></textarea>
-    </div>
-    
-    <div>
-        <input type="submit" value="Enviar"/>
-    </div>
+      </div>
 
-    <div>
-        <button type="submit" name="btn_comprar" value="comprar">Comprar</button>
-    </div>
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
 
+      <div>
+        <button type="submit" name="btn_comprar" value="comprar">
+          Comprar
+        </button>
+      </div>
+    </form>
   </body>
 </html>
